@@ -10,6 +10,10 @@ function capitalizeFirstLetter(str) {
 
 function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase();
+    if (!["rock", "paper", "scissors"].includes(playerSelection)) {
+        return "Invalid choice. Please choose Rock, Paper, or Scissors.";
+    }
+    
 
     if (playerSelection === computerSelection) {
         return "It's a tie! You both chose " + playerSelection;
