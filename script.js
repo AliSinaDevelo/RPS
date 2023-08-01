@@ -29,7 +29,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function updateResult(result) {
-    const resultText = document.getElementById("result-text");
+    const resultText = document.getElementById("result-btn");
     resultText.textContent = result;
 }
 
