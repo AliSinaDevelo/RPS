@@ -29,5 +29,13 @@ h1 {
 }
 
 .choice-btn {
-    
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
