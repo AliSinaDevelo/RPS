@@ -19,3 +19,36 @@ function playRound(playerSelection, computerSelection) {
         return "You lose! " + computerSelection + " beats " + playerSelection;
     }
 }
+
+function game() {
+    let playerScore = 0;
+    let computerScore = 0;
+    const rounds = 5;
+
+    for (let i = 0; i < rounds; i++) {
+        const playerSelection = prompt(
+        `Round ${i + 1}/${rounds}: Choose Rock, Paper, or Scissors`
+        );
+        const computerSelection = getComputerChoice();
+        const roundResult = playRound(playerSelection, computerSelection);
+
+        console.log(roundResult);
+
+        if (roundResult.includes('win')) {
+            playerScore++;
+        } else if (roundResult.includes('lose')) {
+            computerScore++;
+        }
+    }
+
+    if (playerScore > computerScore) {
+        console.log('Congratulations! You win the game!');
+    } else if (playerScore < computerScore) {
+        console.log('You lose the game! Try again.');
+    } else {
+        console.log("It's a tie! The game ended in a draw.");
+  }
+}
+
+document.addEventListener('DOMContentLoaded', game);
+
