@@ -21,3 +21,13 @@ h1 {
     color: #333;
     margin-bottom: 20px;
 }
+
+.game-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice-btn {
+    
+}
