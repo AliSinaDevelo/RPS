@@ -28,6 +28,12 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
+function updateResult(result) {
+    const resultText = document.getElementById("result-text");
+    resultText.textContent = result;
+}
+
+  
 function game() {
     let playerScore = 0;
     let computerScore = 0;
