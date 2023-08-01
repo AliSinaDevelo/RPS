@@ -33,7 +33,13 @@ function updateResult(result) {
     resultText.textContent = result;
 }
 
-  
+function handleChoice(e) {
+    const playerSelection = e.target.id;
+    const computerSelection = getComputerChoice();
+    const result = playRound(playerSelection, computerSelection);
+    updateResult(result);
+}
+    
 function game() {
     let playerScore = 0;
     let computerScore = 0;
